@@ -424,12 +424,12 @@ class LoadingAnimation {
     }
     
     init() {
-        // Hide loading screen after content loads
+        // Hide loading screen after content loads - reduced duration
         window.addEventListener('load', () => {
             setTimeout(() => {
                 this.loadingOverlay.classList.add('hidden');
-                setTimeout(() => this.loadingOverlay.remove(), 1000);
-            }, 1500);
+                setTimeout(() => this.loadingOverlay.remove(), 500);
+            }, 800);
         });
     }
 }
