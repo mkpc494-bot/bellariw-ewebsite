@@ -31,45 +31,45 @@ body {
     cursor: none;
 }
 
-/* Scroll Direction Animations */
+/* Scroll Direction Animations - Faster Duration */
 body.scroll-down .hero-title {
-    animation: scroll-down-title 1s ease-out forwards;
+    animation: scroll-down-title 0.4s ease-out forwards;
 }
 
 body.scroll-up .hero-title {
-    animation: scroll-up-title 1s ease-out forwards;
+    animation: scroll-up-title 0.4s ease-out forwards;
 }
 
 body.scroll-down .hero-line {
-    animation: scroll-down-line 0.8s ease-out forwards;
+    animation: scroll-down-line 0.3s ease-out forwards;
 }
 
 body.scroll-up .hero-line {
-    animation: scroll-up-line 0.8s ease-out forwards;
+    animation: scroll-up-line 0.3s ease-out forwards;
 }
 
 body.scroll-down .navbar {
-    animation: navbar-hide 0.3s ease-out forwards;
+    animation: navbar-hide 0.2s ease-out forwards;
 }
 
 body.scroll-up .navbar {
-    animation: navbar-show 0.3s ease-out forwards;
+    animation: navbar-show 0.2s ease-out forwards;
 }
 
 body.scroll-down .member-card {
-    animation: card-scroll-down 0.6s ease-out forwards;
+    animation: card-scroll-down 0.3s ease-out forwards;
 }
 
 body.scroll-up .member-card {
-    animation: card-scroll-up 0.6s ease-out forwards;
+    animation: card-scroll-up 0.3s ease-out forwards;
 }
 
 body.scroll-down .float-element {
-    animation: float-scroll-down 1s ease-out forwards;
+    animation: float-scroll-down 0.5s ease-out forwards;
 }
 
 body.scroll-up .float-element {
-    animation: float-scroll-up 1s ease-out forwards;
+    animation: float-scroll-up 0.5s ease-out forwards;
 }
 
 /* Custom Cursor */
@@ -1028,22 +1028,22 @@ body.scroll-up .float-element {
     }
 }
 
-/* Scroll Direction Animations Keyframes */
+/* Scroll Direction Animations Keyframes - Faster Duration */
 @keyframes scroll-down-title {
     0% {
         transform: scale(1) translateY(0);
         opacity: 1;
     }
     100% {
-        transform: scale(0.8) translateY(-50px);
-        opacity: 0.5;
+        transform: scale(0.9) translateY(-30px);
+        opacity: 0.7;
     }
 }
 
 @keyframes scroll-up-title {
     0% {
-        transform: scale(0.8) translateY(-50px);
-        opacity: 0.5;
+        transform: scale(0.9) translateY(-30px);
+        opacity: 0.7;
     }
     100% {
         transform: scale(1) translateY(0);
@@ -1057,15 +1057,15 @@ body.scroll-up .float-element {
         opacity: 1;
     }
     100% {
-        transform: translateX(-100px);
-        opacity: 0.3;
+        transform: translateX(-50px);
+        opacity: 0.5;
     }
 }
 
 @keyframes scroll-up-line {
     0% {
-        transform: translateX(-100px);
-        opacity: 0.3;
+        transform: translateX(-50px);
+        opacity: 0.5;
     }
     100% {
         transform: translateX(0);
@@ -1078,13 +1078,13 @@ body.scroll-up .float-element {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-100%);
+        transform: translateY(-80%);
     }
 }
 
 @keyframes navbar-show {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(-80%);
     }
     100% {
         transform: translateY(0);
@@ -1097,15 +1097,15 @@ body.scroll-up .float-element {
         opacity: 1;
     }
     100% {
-        transform: translateY(30px) scale(0.95);
-        opacity: 0.8;
+        transform: translateY(15px) scale(0.98);
+        opacity: 0.9;
     }
 }
 
 @keyframes card-scroll-up {
     0% {
-        transform: translateY(30px) scale(0.95);
-        opacity: 0.8;
+        transform: translateY(15px) scale(0.98);
+        opacity: 0.9;
     }
     100% {
         transform: translateY(0) scale(1);
@@ -1118,13 +1118,13 @@ body.scroll-up .float-element {
         transform: translateY(0) rotate(0deg);
     }
     100% {
-        transform: translateY(100px) rotate(360deg);
+        transform: translateY(50px) rotate(180deg);
     }
 }
 
 @keyframes float-scroll-up {
     0% {
-        transform: translateY(100px) rotate(360deg);
+        transform: translateY(50px) rotate(180deg);
     }
     100% {
         transform: translateY(0) rotate(0deg);
